@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discount Calculator</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            position: relative;
+            height: 100vh;
+            align-items: center;
+
+        }
+
+        .div1 {
+            background-color: #F97F51;
+            width: 410px;
+            position: absolute;
+            box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+            -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+            border-radius: 10px;
+
+        }
+
+        .heading {
+            text-align: center;
+            margin-top: 5px;
+            margin-bottom: 4px;
+        }
+
+        #bill{
+            margin-top: 10px;
+        }
+
+        input[type="number"],
+        button[type="button"] {
+            width: 380px;
+            padding: 5px;
+            border: 1px solid #009432;
+            border-radius: 8px;
+            box-sizing: border-box;
+          
+        }
+        
+        button[type="button"]:hover {
+
+            border: 2px solid orange;
+            padding: 4px;
+            border-radius: 10px;
+            color: orange;
+
+        }
+
+        button[type="button"] {
+            margin-top: 10px;
+            color: white;
+            background-color: #009432;
+
+        }
+
+        table {
+            padding-left: 10px;
+        }
+
+        td {
+            padding: 2px;
+
+        }
+        #billAmount{
+            margin-top: 50px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="div1">
+            <h2 class="heading">Discount Calculator</h2>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>Enter the Bill amount and discount in percentage</td>
+                    </tr>
+                    <tr>
+                        <td ><label for="billAmount">Bill Amount</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="number"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="discountPercentage">Discount Percentage</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="number"></td>
+                    </tr>
+                    <tr>
+                        <td><button type="button">Calculate</button></td>
+                    </tr>
+                    <tr>
+                        <td>Total Discount Amount</td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</body>
+
+</html>
